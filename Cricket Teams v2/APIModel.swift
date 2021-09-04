@@ -7,13 +7,18 @@
 
 import Foundation
 
+//protocol to update api result
 protocol APIUpdateDelegate{
 	func updateAPIResult(_ controller: APIController, _ cricketTeams: [String: [CountryModel]])
 }
 
+// main api controller class
 class APIController{
+	
+	//delegate to update the api result
 	var apiUpdateDelegate: APIUpdateDelegate?
-	var playerList: [String: [CountryModel]] = [String: [CountryModel]]()
+	
+	//this method calls the api and parse the result
 	func fetchData(){
 	guard let url = URL(string: "https://test.oye.direct/players.json")
 	else{
@@ -39,6 +44,8 @@ class APIController{
 	}
 }
 
+
+//api scheme with little modification
 struct CountryModel: Codable, Identifiable{
 	let name: String
 	let captain: Bool?
