@@ -41,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C370D9C926E36BB30050D154 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C396E9FA26E1EA1C009FB3B8 /* APIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C370D9CA26E36BBD0050D154 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C396E9EC26E1E6A2009FB3B8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C370D9CB26E36BD00050D154 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C396E9EA26E1E6A2009FB3B8 /* ViewController.swift */,
+				C396E9FC26E26530009FB3B8 /* teamViewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C396E9DA26E1E6A2009FB3B8 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +85,14 @@
 		C396E9E526E1E6A2009FB3B8 /* Cricket Teams v2 */ = {
 			isa = PBXGroup;
 			children = (
+				C370D9CB26E36BD00050D154 /* Controller */,
+				C370D9CA26E36BBD0050D154 /* View */,
+				C370D9C926E36BB30050D154 /* Model */,
 				C396E9E626E1E6A2009FB3B8 /* AppDelegate.swift */,
 				C396E9E826E1E6A2009FB3B8 /* SceneDelegate.swift */,
-				C396E9EA26E1E6A2009FB3B8 /* ViewController.swift */,
-				C396E9EC26E1E6A2009FB3B8 /* Main.storyboard */,
 				C396E9EF26E1E6A8009FB3B8 /* Assets.xcassets */,
 				C396E9F126E1E6A8009FB3B8 /* LaunchScreen.storyboard */,
 				C396E9F426E1E6A8009FB3B8 /* Info.plist */,
-				C396E9FA26E1EA1C009FB3B8 /* APIModel.swift */,
-				C396E9FC26E26530009FB3B8 /* teamViewViewController.swift */,
 			);
 			path = "Cricket Teams v2";
 			sourceTree = "<group>";
